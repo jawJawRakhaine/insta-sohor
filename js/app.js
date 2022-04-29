@@ -30,8 +30,8 @@ const reportPost = (id) => {
 
 const displayContent = (text) => {
   return text.length < 30
-    ? "text"
-    : text.slice(0, 30) + "<span class='fw-bold'>... Read more</span>";
+    ? text
+    : text.slice(0, 30) + "<span class='fw-bold'>  ... Read more</span>";
 };
 
 const switchTab = (id) => {
@@ -110,7 +110,7 @@ const createPost = (post) => {
                   </button>
                 </div>
 
-                <div class="post__content">${displayContent(
+                <div class="post__content ms-2">${displayContent(
                   post.description
                 )}</div>
 
