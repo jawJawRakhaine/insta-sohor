@@ -102,7 +102,7 @@
               aria-expanded="false"
               aria-controls="collapseOne"
             >
-              How does JavaScript event loop works?
+              How does JavaScript works?
             </button>
           </h2>
           <div
@@ -113,11 +113,13 @@
           >
             <div class="accordion-body">
               <p>
-                The event loop is a process that waits for the Call Stack to be
-                clear before pushing callbacks from the Task Queue to the Call
-                Stack. Once the Stack is clear, the event loop triggers and
-                checks the Task Queue for available callbacks. If there are no
-                more callbacks, the event loop ends.
+                JavaScript is a single threated interpreted programming language
+                which works in every web browser in our devices which supports
+                javascript. In a google chrome browser it is interpreted by a v8
+                engine. JavaScript is a high level language which is not
+                directly accessible by device's browser. The v8 engine converts
+                the high level language code to machine code. Then the device
+                can easily access the code and run inside itself.
               </p>
             </div>
           </div>
@@ -152,7 +154,7 @@
                 <tbody>
                   <tr>
                     <td>
-                      The localStorage object stores data with no expiration
+                      The Local Storage object stores data with no expiration
                       date. The data is not deleted when the browser is closed,
                       and are available for future sessions. The data is stored
                       in a browser specific file. This file is stored in the
@@ -166,6 +168,10 @@
                       The data is cleared once the user closes the browser
                       window.
                     </td>
+                  </tr>
+                  <tr>
+                    <td>It takes 10 MB for storing data in local storage.</td>
+                    <td>It takes 10 MB for storing data in session storage.</td>
                   </tr>
                 </tbody>
               </table>
